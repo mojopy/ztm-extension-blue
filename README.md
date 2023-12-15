@@ -34,6 +34,8 @@ MIT License
 
 ## Logs
 
+I make no promises to keep this updated. :flushed:
+
 * Fri Dec 15, 2023 - My Fork, theme updates.
 * Thu Dec 14, 2023 - fixed all the `<a>` tags that are not underlined in dark mode. Fixed a lot of bugs. Released version (2023.12.14.01).
 * Wed Dec 13, 2023 - Version (23.12.13) pre-release and version (2023.12.13)
