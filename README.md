@@ -21,6 +21,12 @@ Main changes:
 
 <img src="./assets/ztm-extension-screenshots/ztm-extension-blueified.png">
 
+## Download & Installing it
+
+May only be installed locally on Chrome for now. 
+
+* Follow the guide made by Sithu himself here: [Installing extension on Google Chrome locally](./docs/install-on-chrome.md)
+
 ## License
 
 MIT License
