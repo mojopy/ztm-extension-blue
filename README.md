@@ -30,6 +30,7 @@ Main changes:
 May only be installed locally on Chrome for now. 
 
 * Follow the guide made by Sithu himself here: [Installing extension on Google Chrome locally](./docs/install-on-chrome.md)
+* File to grab is here: <https://github.com/mojopy/ztm-extension-pt/tree/main/versions>
 
 ## License
 
