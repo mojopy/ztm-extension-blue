@@ -1,6 +1,6 @@
 <img align="right" width="150" height="150" src="./assets/ztm-logo.png">
 
-# Zero To Mastery - Extension
+# ZTM Ext. - Blueified
 
 Fork of the Official extension for Zero To Mastery Academy students. [2023-12-15]
 
