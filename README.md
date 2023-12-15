@@ -19,7 +19,9 @@ Main changes:
 
 ## Screenshot Example:
 
-<img src="./assets/ztm-extension-screenshots/ztm-extension-blueified.png">
+<img src="./assets/ztm-extension-screenshots/ztm-extension-blueified-01.png">
+
+<img src="./assets/ztm-extension-screenshots/ztm-extension-blueified-02.png">
 
 ## Download & Installing it
 
