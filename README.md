@@ -16,7 +16,7 @@ Main changes:
 * Slightly reduced scrollbars widths
 * Green checkmarks and completion rate, fixed hover icons borders as well.
 
-- Vidsize version made specifically for me, reduces video player to about 80% its max size so it fits nicely in my browser; not the best method however, it's not all that responsive. May change or further on...
+- Vidsize version made specifically for me, reduces video player to about 85% its max size so it fits nicely in my browser; not the best method however, it's not all that responsive. May change or further on...
 
 === Changes made only for Chrome/Chromium ===
 
