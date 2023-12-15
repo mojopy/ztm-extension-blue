@@ -13,7 +13,7 @@ Main changes:
 * Theme is blueified instead.
 * Removes borders (True in both dark and light mode)
 * Darkify scrollbars as well
-* Slightly reduced scrollbars widths
+* Slightly reduced scrollbars widths, redundant ones removed.
 * Green checkmarks and completion rate, fixed hover icons borders as well.
 
 - Vidsize version made specifically for me, reduces video player to about 85% its max size so it fits nicely in my browser; not the best method however, it's not all that responsive. May change or further on...
