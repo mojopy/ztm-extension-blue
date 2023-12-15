@@ -4,7 +4,7 @@
 
 Fork of the Official extension for Zero To Mastery Academy students. [2023-12-15]
 
-Personal touches for dark mode mainly.
+Personal touches for dark mode mainly; No promises made the changes will work as well on your machine.
 
 See the official here: <https://github.com/sithu-khant/ztm-extension>
 
