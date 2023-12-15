@@ -14,6 +14,7 @@ Main changes:
 * Removes borders (True in both dark and light mode)
 * Darkify scrollbars as well
 * Slightly reduced scrollbars widths
+* Green checkmarks and completion rate, fixed hover icons borders as well.
 
 - Vidsize version made specifically for me, reduces video player to about 80% its max size so it fits nicely in my browser; not the best method however, it's not all that responsive. May change or further on...
 
@@ -21,7 +22,7 @@ Main changes:
 
 ## Screenshot Example:
 
-<img src="./assets/ztm-extension-screenshots/ztm-extension-blueified-01.png">
+<img src="./assets/ztm-extension-screenshots/ztm-extension-blueified-03.png">
 
 <img src="./assets/ztm-extension-screenshots/ztm-extension-blueified-02.png">
 
