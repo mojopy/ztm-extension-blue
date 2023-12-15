@@ -4,7 +4,7 @@
 
 Fork of the Official extension for Zero To Mastery Academy students. [2023-12-15]
 
-See the official here:
+See the official here: <https://github.com/sithu-khant/ztm-extension>
 
 Main changes: 
 
