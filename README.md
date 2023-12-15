@@ -4,6 +4,8 @@
 
 Fork of the Official extension for Zero To Mastery Academy students. [2023-12-15]
 
+Personal touches for dark mode mainly.
+
 See the official here: <https://github.com/sithu-khant/ztm-extension>
 
 Main changes: 
@@ -11,6 +13,13 @@ Main changes:
 * Theme is blueified instead.
 * Removes borders (True in both dark and light mode)
 * Darkify scrollbars as well
+* Slightly reduced scrollbars widths
+
+=== Changes made only for the Chrome Extension ===
+
+## Screenshot Example:
+
+<img src="./assets/ztm-extension-screenshots/ztm-extension-blueified.png">
 
 ## License
 
