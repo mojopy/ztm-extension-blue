@@ -15,6 +15,8 @@ Main changes:
 * Darkify scrollbars as well
 * Slightly reduced scrollbars widths
 
+- Vidsize version made specifically for me, reduces video player to about 80% its max size so it fits nicely in my browser; not the best method however, it's not all that responsive. May change or further on...
+
 === Changes made only for the Chrome Extension ===
 
 ## Screenshot Example:
