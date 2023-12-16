@@ -21,6 +21,27 @@ addZtmToggleCheckbox.innerHTML = `
             display: none;
         }
     }
+
+    ::webkit-scrollbar {
+        width: 12px;
+    }
+
+    .course-sidebar {
+        border-right: none !important;
+    }
+
+    header.half-height .lecture-nav a.nav-btn {
+        border-left: none !important;
+    }
+
+    .full-width {
+        border-bottom: none !important;
+    }
+
+    section.lecture-page-layout {
+        overflow: hidden !important;
+    }
+
 </style>
 
 <div class="switch ztm-toggle-hide">
@@ -116,11 +137,46 @@ addZtmDrakmodeStyle.innerHTML = `
 <!-- ZTM Darkmode Style by Sithu Khant -->
 
 <style type="text/css">
+    ::-webkit-scrollbar {
+        background: #0C1220;
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #202072;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+
+    header.half-height .lecture-left a.nav-icon-back{
+        background-color: #0F1628 !important;
+    }
+
+    .course-sidebar .course-progress .course-progress-percentage {
+        color: #32dd88 !important;
+    }
+
+    .progressbar {
+        background-color: #202072 !important;
+    }
+
+    .progressbar .progressbar-fill {
+        background-color: #32dd88 !important;
+    }
+
+    header.half-height .lecture-left .settings-dropdown ul.dropdown-menu,
+    header.half-height .lecture-left .settings-dropdown ul.dropdown-menu li {
+        border-color: #1C2949 !important;
+    }
+
     body,
     div,
     ul, li, strong, a {
-        background-color: #1E1E1E !important;
+        background-color: #0F1628 !important;
         color: #fff !important;
+        scrollbar-color: #202072 #0C1220;
     }
 
     header.half-height .lecture-left .nav-icon-back {
@@ -130,39 +186,28 @@ addZtmDrakmodeStyle.innerHTML = `
     }
 
     input.custom-toggle-round:checked+label:before {
-        background: #4e4e4e !important;
-        border: 1px solid #4e4e4e;
+        background: #1C2949 !important;
+        border: 1px solid #1C2949;
     }
 
     input.custom-toggle-round:checked+label:after {
         background: #fff !important;
-        border: 1px solid #4e4e4e;
+        border: 1px solid #1C2949;
     }
 
     #settings_menu:hover, .nav-btn:hover,
     header.half-height .lecture-left .nav-icon-settings:hover, header.half-height .lecture-left .nav-icon-list:hover {
-        background-color: #4e4e4e !important;
+        background-color: #1C2949 !important;
     }
 
     header.half-height .lecture-left .open .dropdown-toggle {
-        background-color: #4e4e4e !important;
+        background-color: #1C2949 !important;
     }
 
-    .progressbar {
-        border: 0.5px solid #4e4e4e !important;
-    }
-
-    .nav-btn.complete,
-    .progressbar .progressbar-fill {
-        background-color: #4e4e4e !important;
-    }
-
+    .course-section ul.section-list .section-item.next-lecture .item:hover span.status-icon,
+    .course-section ul.section-list .section-item.next-lecture span.status-icon,
     .course-section ul.section-list .section-item.incomplete .status-icon {
         box-shadow: inset 0 0 0 2px #b8b8b8 !important;
-    }
-
-    .course-sidebar .course-progress.lecture-page.sticky {
-        background: #1E1E1E !important;
     }
 
     .course-section ul.section-list .section-item.next-lecture .item,
@@ -172,16 +217,16 @@ addZtmDrakmodeStyle.innerHTML = `
 
     .course-sidebar .row.lecture-sidebar .course-section .item:hover, 
     .course-sidebar .row.lecture-sidebar .course-section .item:hover div {
-        background-color: #4e4e4e !important;
+        background-color: #1C2949 !important;
     }
 
     header.half-height .lecture-left .nav-icon-list.nav-icon-list,
     header.half-height .lecture-left .nav-icon-list:hover {
-        background-color: #4e4e4e !important;
+        background-color: #1C2949 !important;
     }
 
     .course-mainbar.lecture-content.full-width-content * {
-        background-color: #1E1E1E !important;
+        background-color: #0F1628 !important;
         color: #fff !important;
     }
 
@@ -195,7 +240,11 @@ addZtmDrakmodeStyle.innerHTML = `
     }
 
     .lecture-content .lecture-attachment .video-options * {
-        background-color: #4e4e4e !important;
+        background-color: #1C2949 !important;
+    }
+
+    .course-section ul.section-list .section-item.completed .item span.status-icon {
+        background-color: rgb(69, 149, 89);
     }
 
 </style>
