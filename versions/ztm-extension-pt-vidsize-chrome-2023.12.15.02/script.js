@@ -37,6 +37,17 @@ addZtmToggleCheckbox.innerHTML = `
     section.lecture-page-layout {
         overflow: hidden !important;
     }
+
+    iframe._1jWb8._13nB1 {
+        height: auto !important;
+        width: 85% !important;
+        aspect-ratio: 16/9;
+        margin: 0 auto !important;
+    }
+
+    div.video-options a.download {
+        border-radius: 6px !important;
+    }
 </style>
 
 <div class="switch ztm-toggle-hide">
