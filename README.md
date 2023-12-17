@@ -21,8 +21,6 @@ Main changes:
 
 === Changes made only for Chrome/Chromium ===
 
-## Screenshot Example:
-
 <img src="./assets/ztm-extension-screenshots/ztm-extension-blueified-0.gif">
 
 <img src="./assets/ztm-extension-screenshots/ztm-extension-blueified-1.png">
