@@ -12,12 +12,12 @@ Main changes:
 
 * Theme is blueified instead.
 * Removes borders (True in both dark and light mode)
-* Darkify scrollbars as well
-* Slightly reduced scrollbars widths, redundant ones removed.
+* Maximize video size while being able to keep it all in view.
+* Button to automatically properly scroll on the video.
+* Darkify scrollbars as well, redundant ones removed.
 * Green checkmarks and completion rate, fixed hover icons borders as well.
 * Add back colors for color snippets, in-line and blocks.
-
-- Vidsize version made specifically for me, reduces video player to about 85% its max size so it fits nicely in my browser; not the best method however, it's not all that responsive. May change or further on...
+* Maybe more but I forget...?
 
 === Changes made only for Chrome/Chromium ===
 
@@ -36,11 +36,11 @@ May only be installed locally on Chrome for now.
 
 MIT License
 
-
 ## Logs
 
 I make no promises to keep this updated. :flushed:
 
+* Sat Dec 16, 2023 - Videos sizing and some additional recolorings.
 * Fri Dec 15, 2023 - My Fork, theme updates.
 * Thu Dec 14, 2023 - fixed all the `<a>` tags that are not underlined in dark mode. Fixed a lot of bugs. Released version (2023.12.14.01).
 * Wed Dec 13, 2023 - Version (23.12.13) pre-release and version (2023.12.13)
