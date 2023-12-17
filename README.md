@@ -2,7 +2,8 @@
 
 # ZTM Ext. - Blueified
 
-Fork of the Official extension for Zero To Mastery Academy students. [2023-12-15]
+Fork of the Official extension for Zero To Mastery Academy students.
+Forked from version [2023-12-14.1]
 
 Personal touches for dark mode mainly; No promises made the changes will work as well on your machine.
 
@@ -19,18 +20,19 @@ Main changes:
 * Add back colors for color snippets, in-line and blocks.
 * Maybe more but I forget...?
 
-=== Changes made only for Chrome/Chromium ===
-
 <img src="./assets/ztm-extension-screenshots/ztm-extension-blueified-0.gif?">
 
 <img src="./assets/ztm-extension-screenshots/ztm-extension-blueified-1.png?">
 
-## Download & Installing it
+## Download & Install
 
-May only be installed locally on Chrome for now. 
+* Follow the guide for either Chrome or Firefox made by Sithu here:
+    * [Installing on Google Chrome locally](./docs/install-on-chrome.md)
+    * [Installing on Firefox locally](./docs/install-on-firefox.md)
 
-* Follow the guide made by Sithu himself here: [Installing extension on Google Chrome locally](./docs/install-on-chrome.md)
 * File to grab is here: <https://github.com/mojopy/ztm-extension-pt/tree/main/versions>
+
+*Note: Firefox addon is only lightly tested.*
 
 ## License
 
@@ -40,7 +42,7 @@ MIT License
 
 I make no promises to keep this updated. :flushed:
 
-* Sat Dec 16, 2023 - Videos sizing and some additional recolorings.
+* Sat Dec 16, 2023 - Videos sizing and some additional recolorings. Added firefox file.
 * Fri Dec 15, 2023 - My Fork, theme updates.
 * Thu Dec 14, 2023 - fixed all the `<a>` tags that are not underlined in dark mode. Fixed a lot of bugs. Released version (2023.12.14.01).
 * Wed Dec 13, 2023 - Version (23.12.13) pre-release and version (2023.12.13)

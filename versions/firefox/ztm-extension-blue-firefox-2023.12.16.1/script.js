@@ -195,24 +195,16 @@ addZtmDarkmodeStyle.innerHTML = `
 
 <style type="text/css">
 
+    * {
+        scrollbar-color: #202072 #0C1220;
+    }
+
     #ztm-focus-btn {
         background-color: #373535;        
     }
 
     .ztm-toggle-hide {
-        bac
-    }
-
-    ::-webkit-scrollbar {
-        background: #0C1220;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #202072;
-    }
-
-    ::-webkit-scrollbar-corner {
-        background-color: transparent;
+        
     }
 
     header.half-height .lecture-left a.nav-icon-back{
