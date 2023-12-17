@@ -1,8 +1,72 @@
+var lectureLeft = document.querySelector('.nav-icon-back');
+
+// ----------
+// Focus on Video Section - Start
+// ----------
+
+focusOnVideo = () => {
+    let videoElement = document.getElementsByClassName("_1jWb8 _13nB1");
+    let vidOffset = -75;
+    let vidPos = videoElement[0].getBoundingClientRect().top + window.scrollY + vidOffset;
+
+    window.scrollTo({top: vidPos, behavior: "smooth"});
+}
+
+var addZtmFocusVideo = document.createElement('div');
+
+addZtmFocusVideo.innerHTML = `
+<!-- ZTM Focus on Video by aeelis -->
+
+<style type="text/css">
+
+    header.half-height .lecture-left {
+        align-items: center;
+    }
+
+    #ztm-focus-btn{
+        border-radius: 10px;
+    }
+
+    @media screen and (max-width: 765px) {
+        #ztm-focus-btn{
+            display: none;
+        }
+    }
+
+    iframe._1jWb8._13nB1 {
+        height: auto !important;
+        width: 100% !important;
+        max-height: 91vh;
+        aspect-ratio: 16/9;
+        margin: 0 auto !important;
+    }
+
+    div.video-options a.download {
+        border-radius: 6px !important;
+        margin-top: 5px;
+    }
+</style>
+
+<div class="ztm-focus-btn">
+    <button type="button" name="ztm-focus-btn" id="ztm-focus-btn">Focus Video</button>
+</div> 
+
+<!-- ZTM Focus on Video by aeelis -->`
+
+lectureLeft.parentNode.insertBefore(addZtmFocusVideo, lectureLeft.nextSibling);
+
+var ztmFocusBtn = document.getElementById('ztm-focus-btn');
+
+ztmFocusBtn.addEventListener('click', focusOnVideo);
+
+// ----------
+// Focus on Video Section - End
+// ----------
+
 // ----------
 // Start Togglebar Section
 // ----------
 
-var lectureLeft = document.querySelector('.nav-icon-back');
 var addZtmToggleCheckbox = document.createElement('div');
 
 addZtmToggleCheckbox.innerHTML = `
@@ -10,10 +74,7 @@ addZtmToggleCheckbox.innerHTML = `
 
 <style type="text/css">
     .ztm-toggle-hide {
-        position: absolute;
-        top: 50%;
-        left: 60px;
-        transform: translateY(-50%);
+        margin-left: auto;
     }
 
     @media screen and (max-width: 765px) {
@@ -37,6 +98,7 @@ addZtmToggleCheckbox.innerHTML = `
     section.lecture-page-layout {
         overflow: hidden !important;
     }
+
 </style>
 
 <div class="switch ztm-toggle-hide">
@@ -54,7 +116,7 @@ var ztmToggleCheckbox = document.getElementById('ztm-toggle-hide');
 var courseSidebar = document.getElementById('courseSidebar');
 
 // check if darkmode is enabled in localStorage
-var isSidebarToggleEnabled = localStorage.getItem('ztmToggleSidebarkMode') === 'true';
+var isSidebarToggleEnabled = localStorage.getItem('ztmToggleSidebarMode') === 'true';
 
 // store darkmode checkbox status
 ztmToggleCheckbox.checked = isSidebarToggleEnabled;
@@ -76,7 +138,7 @@ function ztmToggleSidebar() {
     };
 
     // store darkmode checkbox status
-    localStorage.setItem('ztmToggleSidebarkMode', ztmToggleCheckbox.checked);
+    localStorage.setItem('ztmToggleSidebarMode', ztmToggleCheckbox.checked);
 };
 
 // hide sidebar
@@ -132,9 +194,17 @@ addZtmDarkmodeStyle.innerHTML = `
 <!-- ZTM Darkmode Style by Sithu Khant -->
 
 <style type="text/css">
+
+    #ztm-focus-btn {
+        background-color: #373535;        
+    }
+
+    .ztm-toggle-hide {
+        bac
+    }
+
     ::-webkit-scrollbar {
         background: #0C1220;
-        width: 8px;
     }
 
     ::-webkit-scrollbar-thumb {
@@ -178,6 +248,14 @@ addZtmDarkmodeStyle.innerHTML = `
         background-color: #fff !important;
         color: #fff !important;
         fill: #fff !important;
+    }
+
+    input.custom-toggle-round+label:before {
+        background-color: #373535;
+    }
+
+    input.custom-toggle-round+label {
+        background-color: #000;
     }
 
     input.custom-toggle-round:checked+label:before {
@@ -272,7 +350,11 @@ function ztmToggleDarkmode() {
         // append the darkmode style li to ul
         dropdownMenuUl.appendChild(addZtmDarkmodeStyle);
     } else {
-       dropdownMenuUl.removeChild(addZtmDarkmodeStyle);
+        try {
+            dropdownMenuUl.removeChild(addZtmDarkmodeStyle);
+        } catch (e) {
+            console.log(e);
+        }
     };
 
     // store darkmode checkbox status
