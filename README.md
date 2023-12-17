@@ -27,6 +27,8 @@ Main changes:
 
 <img src="./assets/ztm-extension-screenshots/ztm-extension-blueified-02.png">
 
+<img src="./assets/ztm-extension-screenshots/ztm-extension-blueified-04.png">
+
 ## Download & Installing it
 
 May only be installed locally on Chrome for now. 
