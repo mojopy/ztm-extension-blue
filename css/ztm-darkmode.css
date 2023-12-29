@@ -2,21 +2,21 @@
 
 body,
 *:not(.status-icon) {
-	background: #232931 !important;
-	color: #EEEEEE !important;
+	background-color: #0F1628 !important;
+	color: #fff !important;
+	scrollbar-color: #202072 #0C1220;
 }
 
-body::-webkit-scrollbar {
-	width: 0.3em;
+::-webkit-scrollbar {
+	background: #0C1220;
 }
- 
-body::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+::-webkit-scrollbar-thumb {
+	background: #202072;
 }
- 
-body::-webkit-scrollbar-thumb {
-	background-color: #393E46;
-	outline: 1px solid #232931;
+
+::-webkit-scrollbar-corner {
+	background-color: transparent;
 }
 
 .navbar {
@@ -120,10 +120,6 @@ body::-webkit-scrollbar-thumb {
 
 .course-sidebar {
 	border-right: 1px solid #393E46 !important;
-}
-
-.course-sidebar::-webkit-scrollbar {
-	width: 0.5em;
 }
  
 .course-sidebar::-webkit-scrollbar-track {
@@ -269,100 +265,116 @@ body::-webkit-scrollbar-thumb {
 
 /* ----- Start Lecture Page Darkmode Section ----- */
 
-.course-sidebar .course-progress .course-progress-percentage,
-.course-sidebar .course-progress .course-progress-percentage * {
-	background: transparent !important;
+
+#ztm-focus-btn {
+	background-color: #373535;        
 }
 
-header.half-height .lecture-left .nav-icon-settings {
-	background: #393E46 !important;
+header.half-height .lecture-left a.nav-icon-back{
+	background-color: #0F1628 !important;
 }
 
-header.half-height .lecture-left .nav-icon-settings:hover, 
-header.half-height .lecture-left .nav-icon-list:hover {
-    background: #393E46 !important;
+.course-sidebar .course-progress .course-progress-percentage {
+	color: #32dd88 !important;
 }
 
-header.half-height .lecture-left .settings-dropdown ul {
-	border: 1px solid #393E46 !important;
+.progressbar {
+	background-color: #202072 !important;
 }
 
-.dropdown-backdrop {
-	background: transparent !important;
+.progressbar .progressbar-fill {
+	background-color: #32dd88 !important;
 }
 
+header.half-height .lecture-left .settings-dropdown ul.dropdown-menu,
 header.half-height .lecture-left .settings-dropdown ul.dropdown-menu li {
-	border-bottom: 1px solid #393E46 !important;
-	outline: none !important;
+	border-color: #1C2949 !important;
 }
 
-header.half-height .lecture-left .nav-icon-settings * {
-	background: transparent !important;
+header.half-height .lecture-left .nav-icon-back {
+	background-color: #fff !important;
+	color: #fff !important;
+	fill: #fff !important;
+}
+
+input.custom-toggle-round+label:before {
+	background-color: #373535;
+}
+
+input.custom-toggle-round+label {
+	background-color: #000;
+}
+
+input.custom-toggle-round:checked+label:before {
+	background: #1C2949 !important;
+	border: 1px solid #1C2949;
+}
+
+input.custom-toggle-round:checked+label:after {
+	background: #fff !important;
+	border: 1px solid #1C2949;
+}
+
+#settings_menu:hover, .nav-btn:hover,
+header.half-height .lecture-left .nav-icon-settings:hover, header.half-height .lecture-left .nav-icon-list:hover {
+	background-color: #1C2949 !important;
 }
 
 header.half-height .lecture-left .open .dropdown-toggle {
-    background: #393E46 !important;
+	background-color: #1C2949 !important;
 }
 
-header.half-height .lecture-nav a.nav-btn {
-	border-left: 1px solid #232931 !important;
+.course-section ul.section-list .section-item.next-lecture .item:hover span.status-icon,
+.course-section ul.section-list .section-item.next-lecture span.status-icon,
+.course-section ul.section-list .section-item.incomplete .status-icon {
+	box-shadow: inset 0 0 0 2px #b8b8b8 !important;
 }
 
-header.half-height .lecture-nav a.nav-btn:hover {
-	background: #393E46 !important;
+.course-section ul.section-list .section-item.next-lecture .item,
+.course-section ul.section-list .section-item.next-lecture .item div {
+	background-color: #000 !important;
 }
 
-header.half-height .lecture-nav a.nav-btn.complete {
-	background: #393E46 !important;
+.course-sidebar .row.lecture-sidebar .course-section .item:hover, 
+.course-sidebar .row.lecture-sidebar .course-section .item:hover div {
+	background-color: #1C2949 !important;
 }
 
-header.half-height .lecture-nav a.nav-btn * {
-	background: transparent !important;
+header.half-height .lecture-left .nav-icon-list.nav-icon-list,
+header.half-height .lecture-left .nav-icon-list:hover {
+	background-color: #1C2949 !important;
 }
 
-.lecture-content.course-mainbar * {
-	background: transparent !important;
-	color: #EEEEEE !important;
+.course-mainbar.lecture-content.full-width-content * {
+	background-color: #0F1628;
+	color: #fff;
 }
 
-.lecture-content.course-mainbar a {
-	text-decoration: underline !important;
+.course-mainbar.lecture-content.full-width-content code,
+.course-mainbar.lecture-content.full-width-content pre {
+	border: 0.5px solid #fff;
 }
 
-.lecture-content .lecture-attachment .video-options a {
-	background: #393E46 !important;
-	text-decoration: none !important;
+.lecture-content .lecture-attachment a {
+	text-decoration: underline;
 }
 
-.lecture-content.course-mainbar code,
-.lecture-content.course-mainbar pre {
-	color: #c7254e !important;
-    background-color: #f9f2f4 !important;
+.lecture-content .lecture-attachment .video-options * {
+	background-color: #1C2949 !important;
 }
 
-.lecture-content.course-mainbar code strong,
-.lecture-content.course-mainbar pre strong,
-.lecture-content.course-mainbar code em,
-.lecture-content.course-mainbar pre em {
-	color: #c7254e !important;
+.course-section ul.section-list .section-item.completed .item span.status-icon {
+	background-color: rgb(69, 149, 89);
 }
 
-.lecture-attachment .attachment {
-	border-bottom: 1px solid #393E46 !important;
+.course-mainbar.lecture-content.full-width-content code {
+	color: #ddbbc4;
+	background-color: #753043;
+	border: 0.5px solid #ddbbc4 !important;
 }
 
-header.half-height .lecture-left .nav-icon-list.nav-icon-list.collapsed {
-	background: #393E46 !important;
-	border-bottom: 1px solid transparent !important;
-}
-
-header.half-height .lecture-left .nav-icon-list.nav-icon-list.collapsed * {
-	background: transparent !important;
-}
-
-header.half-height .lecture-left .nav-icon-list:hover * {
-	background: transparent !important;
-	border-bottom: 1px solid transparent !important;
+pre.ql-syntax {
+	background-color: #0b0a18 !important;
 }
 
 /* ----- End Lecture Page Darkmode Section ----- */

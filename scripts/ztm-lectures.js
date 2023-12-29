@@ -1,8 +1,79 @@
+const lectureLeft = document.querySelector('.nav-icon-back');
+
+// ----------
+// Poor Man's Focus on Video Section - Start
+// ----------
+
+focusOnVideo = () => {
+    let videoElement = document.getElementsByClassName("_1jWb8 _13nB1");
+    let vidOffset = -65;
+    let vidPos = videoElement[0].getBoundingClientRect().top + window.scrollY + vidOffset;
+
+    window.scrollTo({top: vidPos, behavior: "smooth"});
+}
+
+var addZtmFocusVideo = document.createElement('div');
+
+addZtmFocusVideo.innerHTML = `
+<!-- ZTM Focus on Video by aeelis -->
+
+<style type="text/css">
+
+    header.half-height .lecture-left {
+        align-items: center;
+    }
+
+    #ztm-focus-btn{
+        border-radius: 10px;
+    }
+
+    @media screen and (max-width: 765px) {
+        #ztm-focus-btn{
+            display: none;
+        }
+    }
+
+    iframe._1jWb8._13nB1 {
+        height: auto !important;
+        width: 100% !important;
+        max-height: 91vh;
+        aspect-ratio: 16/9;
+        margin: 0 auto !important;
+    }
+
+    div.video-options a.download {
+        border-radius: 6px !important;
+        margin-top: 5px;
+    }
+
+    /* This hides the useless scrollbars inside the actual lecture box, which are only visible on Chrome and Firefox. */
+    section.lecture-page-layout {
+        overflow: hidden !important;
+    }
+
+</style>
+
+<div class="ztm-focus-btn">
+    <button type="button" name="ztm-focus-btn" id="ztm-focus-btn">Focus Video</button>
+</div> 
+
+<!-- ZTM Focus on Video by aeelis -->`
+
+lectureLeft.parentNode.insertBefore(addZtmFocusVideo, lectureLeft.nextSibling);
+
+var ztmFocusBtn = document.getElementById('ztm-focus-btn');
+
+ztmFocusBtn.addEventListener('click', focusOnVideo);
+
+// ----------
+// Poor Man's Focus on Video Section - End
+// ----------
+// Some extra code for auto-focus on load at the end.
+
 // ----------
 // Start Togglebar Section
 // ----------
 
-const lectureLeft = document.querySelector('.nav-icon-back');
 const addZtmToggleCheckbox = document.createElement('div');
 
 addZtmToggleCheckbox.innerHTML = `
@@ -85,3 +156,18 @@ if (lectureLeft) {
 // End Togglebar Section
 // ----------
 
+// This fires for the initial page load-up.
+addEventListener("load", (e) => {
+    focusOnVideo();
+    console.log("Loaded:", e);
+})
+
+// TO-DO NOT FUNCTIONAL YET
+// This is for subsequent move to next lessons without fully leaving the page (working with re-renders, etc)
+// var vidObserver = new MutationObserver(function(muts) {
+//     if ( document.contains(document.getElementsByClassName("lecture-attachment-type-video")[0]) ) {
+//         focusOnVideo();
+//     }
+// })
+
+// vidObserver.observe(document, {attributes: false, childList: true, characterData: false, subtree:true});

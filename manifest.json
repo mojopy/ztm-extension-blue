@@ -42,7 +42,10 @@
 
 	"web_accessible_resources" : [
 		{
-			"resources": ["css/ztm-darkmode.css"],
+			"resources": ["css/ztm-darkmode.css",
+						  "utils/assets/ztm-logo-main-dkmode.png",
+						  "utils/assets/ztm-logo-main-lgmode.png"
+						 ],
 			"matches": ["https://academy.zerotomastery.io/*"]
 		}
 	],
