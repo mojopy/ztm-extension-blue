@@ -1,9 +1,9 @@
 {
 	"manifest_version": 3,
 	"name": "Zero To Mastery",
-	"version": "2023.12.25",
-	"description": "Official extension for Zero To Mastery Academy students.",
-	"author": "Sithu Khant",
+	"version": "2023.12.25.1",
+	"description": "UnOfficial ZTM Ext. - Blueified.",
+	"author": "Sithu Khant, mortellys",
 	"homepage_url": "https://zerotomastery.io/",
 
 	"host_permissions": ["https://*.zerotomastery.io/*"],
@@ -42,10 +42,7 @@
 
 	"web_accessible_resources" : [
 		{
-			"resources": ["css/ztm-darkmode.css",
-						  "utils/assets/ztm-logo-main-dkmode.png",
-						  "utils/assets/ztm-logo-main-lgmode.png"
-						 ],
+			"resources": ["css/ztm-darkmode.css"],
 			"matches": ["https://academy.zerotomastery.io/*"]
 		}
 	],
