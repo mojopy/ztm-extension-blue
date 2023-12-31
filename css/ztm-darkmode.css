@@ -286,6 +286,11 @@ header.half-height .lecture-left a.nav-icon-back{
 	color: #32dd88 !important;
 }
 
+div.course-sidebar-head div.course-progress.lecture-page.sticky {
+	background: #0F1628 !important;
+	border-bottom: none;
+}
+
 .progressbar {
 	background-color: #202072 !important;
 }
