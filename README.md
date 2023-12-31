@@ -33,7 +33,7 @@ Main changes:
     * [Installing on Google Chrome locally](./docs/install-on-chrome.md)
     * [Installing on Firefox locally](./docs/install-on-firefox.md)
 
-* File to grab is here: <https://github.com/mojopy/ztm-extension-pt/tree/main/versions>
+* File to grab is here: <https://github.com/mojopy/ztm-extension-blue/tree/main/versions>
 
 *Note: Firefox addon is only lightly tested.*
 
