@@ -72,6 +72,15 @@ body,
 	overflow: hidden;
 }
 
+section.enrolled-course-layout,
+section.enrolled-course-layout .course-sidebar {
+	overflow: hidden;
+}
+
+a.nav-btn {
+	border-left: none !important;
+}
+
 .view-directory .course-listing:hover {
 	border: 0.5px solid #32DD88 !important;
 }
@@ -111,30 +120,29 @@ body,
 /* ----- Start Course Info Page Darkmode Section ----- */
 
 .full-width {
-	border-bottom: 1px solid #393E46 !important;
+	border-bottom: none !important;
 }
 
 .full-width .navbar-fedora {
-	border-bottom: 1px solid transparent !important;
+	border-bottom: none !important;
 }
 
 .course-sidebar {
-	border-right: 1px solid #393E46 !important;
+	border-right: none !important;
 }
- 
-.course-sidebar::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+header.lecture-header {
+	border-bottom: none !important;
 }
- 
-.course-sidebar::-webkit-scrollbar-thumb {
-	background-color: #393E46;
-	outline: 1px solid #232931;
+
+.navbar {
+	box-shadow: none !important;
 }
 
 .course-sidebar ul.sidebar-nav li.selected a,
 .course-sidebar ul.sidebar-nav li.selected a * {
 	background: #393E46 !important;
-    border-right: 1px solid #393E46 !important;
+    border-right: none !important;
 }
 
 .course-sidebar ul.sidebar-nav li a:hover,
@@ -164,7 +172,7 @@ body,
 }
 
 .course-section .section-title {
-	border-bottom: 1px solid #EEEEEE !important;
+	border-bottom: 1px solid #122b32 !important;
 }
 
 .course-section ul.section-list .section-item .item:hover {
