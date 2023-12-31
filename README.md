@@ -5,7 +5,7 @@
 Fork of the Official extension for Zero To Mastery Academy students.<br>
 Forked from version [2023-12-25]
 
-Personal touches for dark mode mainly; No promises made the changes will work as well on your machine.
+Quick, lazy personal touches for dark mode mainly; No promises made the changes will work as well on your machine or that I will keep this uptodate with the officials.
 
 See the official here: <https://github.com/sithu-khant/ztm-extension>
 
@@ -33,7 +33,7 @@ Main changes:
     * [Installing on Google Chrome locally](./docs/install-on-chrome.md)
     * [Installing on Firefox locally](./docs/install-on-firefox.md)
 
-* File to grab is here: <https://github.com/mojopy/ztm-extension-pt/tree/main/versions>
+* File to grab is here: <https://github.com/mojopy/ztm-extension-blue/tree/main/versions>
 
 *Note: Firefox addon is only lightly tested.*
 
