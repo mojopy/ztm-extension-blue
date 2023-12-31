@@ -3,7 +3,7 @@
 // ----------
 
 // For firefox, use browser.* instead.
-chrome.storage.sync.get('ztmDarkModeCheckboxIsChecked', function (data) {
+chrome.storage.sync.get('ztmDarkModeCheckboxIsChecked').then(function (data) {
     const ztmDarkModeCheckboxIsChecked = data.ztmDarkModeCheckboxIsChecked || false;
 
     if (ztmDarkModeCheckboxIsChecked) {
@@ -23,7 +23,7 @@ chrome.storage.onChanged.addListener(function (changes, namespace) {
             disableZtmDarkMode('css/ztm-darkmode.css');
         }
     }
-})
+});
 
 function enableZtmDarkmode(cssFile) {
     const link = document.createElement('link');
@@ -36,7 +36,7 @@ function enableZtmDarkmode(cssFile) {
 function disableZtmDarkMode(cssFile) {
     const links = document.head.querySelectorAll('link[rel="stylesheet"][href*="' + cssFile + '"]');
     for (let i = 0; i < links.length; i++) {
-        links[i].parentNode.removeChild(links[i])
+        links[i].parentNode.removeChild(links[i]);
     }
 };
 
